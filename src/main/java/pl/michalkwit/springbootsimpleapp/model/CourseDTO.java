@@ -1,12 +1,13 @@
 package pl.michalkwit.springbootsimpleapp.model;
 
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
 public class CourseDTO {
 
     private String name;
-    private int lengthInSeconds;
     private Long id;
+    private int lengthInSeconds;
 }

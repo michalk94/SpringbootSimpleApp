@@ -10,6 +10,7 @@ import pl.michalkwit.springbootsimpleapp.model.UserDTO;
 @RequestMapping(value = "/user")
 public class UserController {
 
+
     @ResponseStatus(value = HttpStatus.CREATED)
     @RequestMapping(value = "/register", method = RequestMethod.POST)
     public UserDTO register(@RequestBody UserDTO userDTO){

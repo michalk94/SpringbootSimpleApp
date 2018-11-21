@@ -1,4 +1,12 @@
 package pl.michalkwit.springbootsimpleapp.service;
 
-public interface CourseService {
+
+
+import java.util.List;
+
+public interface CourseService<T> extends BaseService{
+
+    public List<T> getBought();
+
+    public T buyCourse(int id);
 }

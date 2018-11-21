@@ -1,4 +1,6 @@
 package pl.michalkwit.springbootsimpleapp.service;
 
-public class UserService {
+public interface UserService extends BaseService {
+
+    public void confirmUser(int id);
 }
