@@ -1,4 +1,4 @@
-package pl.michalkwit.springbootsimpleapp;
+package pl.michalkwit.springbootsimpleapp.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

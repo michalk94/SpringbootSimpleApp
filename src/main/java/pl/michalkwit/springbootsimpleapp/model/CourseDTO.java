@@ -1,10 +1,10 @@
-package pl.michalkwit.springbootsimpleapp;
+package pl.michalkwit.springbootsimpleapp.model;
 
 
 import lombok.Data;
 
 @Data
-public class Course {
+public class CourseDTO {
 
     private String name;
     private int lengthInSeconds;

@@ -1,4 +1,4 @@
-package pl.michalkwit.springbootsimpleapp;
+package pl.michalkwit.springbootsimpleapp.controller;
 
 
 
@@ -13,6 +13,6 @@ public class Controller {
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
     public String hello(){
-        return "Hello User";
+        return "Hello UserDTO";
     }
 }

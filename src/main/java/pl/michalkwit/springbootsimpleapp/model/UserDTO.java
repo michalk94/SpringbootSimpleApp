@@ -1,4 +1,4 @@
-package pl.michalkwit.springbootsimpleapp;
+package pl.michalkwit.springbootsimpleapp.model;
 
 
 
@@ -7,7 +7,7 @@ import lombok.Data;
 
 
 @Data
-public class User {
+public class UserDTO {
 
     private String firstName;
     private String lastName;
