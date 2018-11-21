@@ -1,7 +1,10 @@
 package pl.michalkwit.springbootsimpleapp;
 
 
+
 import lombok.Data;
+
+
 
 @Data
 public class User {
