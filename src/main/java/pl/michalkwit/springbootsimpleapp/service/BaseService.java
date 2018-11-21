@@ -1,25 +1,22 @@
 package pl.michalkwit.springbootsimpleapp.service;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+import pl.michalkwit.springbootsimpleapp.persistence.model.BaseEntity;
+
+import java.io.Serializable;
+import java.util.Collection;
 import java.util.List;
 
-public interface BaseService<T> {
+public interface BaseService<T extends BaseEntity, K extends Serializable, R extends JpaRepository<T, K>> {
 
-    public void save(T t);
+    R getRepository();
 
-    public T read(int id);
+    T save(T entity);
 
-    public T readAll(List<Integer> list);
-
-    public void update(T t);
-
-    public void delete(T t);
-
-    public void delete(int id);
+    Collection<T> getAll();
 
 
-
-
-
+    T getOne(K id);
 
 
 }
