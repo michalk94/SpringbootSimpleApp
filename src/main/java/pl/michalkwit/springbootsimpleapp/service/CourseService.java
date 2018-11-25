@@ -8,7 +8,7 @@ import pl.michalkwit.springbootsimpleapp.persistence.repository.CourseRepo;
 
 import java.util.List;
 
-public interface CourseService<T> extends BaseService<Course, Long, CourseRepo> {
+public interface CourseService extends BaseService<Course, Long, CourseRepo> {
 
     CourseDTO getCourseDtoById(Long id);
 
